@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100b17">
+<meta name="description" content="Explore BMverse and meet the cyber-city characters of ANTVERSE.">
+<title>BMverse | ANTVERSE Cyber City</title>
+<link rel="stylesheet" href="style.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="brand" href="#top" aria-label="BMverse home"><span class="mark" aria-hidden="true">B</span>BM<span>VERSE</span></a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main navigation">
+    <a href="#top">Home</a><a href="#characters">Characters</a><a href="#universe">Universe</a>
+  </nav>
+  <a class="nav-action" href="#characters">Explore ANTVERSE</a>
+</header>
+<main id="main">
+<section class="hero" id="top" aria-labelledby="headline">
+  <img class="hero-art" src="assets/city.webp" alt="Anton Antstein overlooking a neon skyline" fetchpriority="high" width="1672" height="941">
+  <div class="hero-content wrap">
+    <p class="kicker"><span></span> BMVERSE PRESENTS</p>
+    <h1 id="headline">ENTER<br>THE <em>ANTVERSE</em></h1>
+    <p class="intro">Meet the scientists, guardians, and mystics of a neon city built above the clouds.</p>
+    <a class="button" href="#characters">Explore characters</a>
+  </div>
+  <div class="hero-credit">ANTON ANTSTEIN <span> / </span> CYBER CITY</div>
+</section>
+<section class="wrap roster" id="characters" aria-labelledby="roster-title">
+  <p class="kicker">ANTVERSE CHARACTERS</p>
+  <h2 id="roster-title">Meet the roster</h2>
+  <p class="section-copy">Open a character profile to see the redesign from three angles.</p>
+  <div class="cards">
+    <button class="card" type="button" data-character="anton">
+      <img src="assets/anton-portrait.webp" alt="" width="660" height="660" loading="lazy">
+      <span class="card-info"><span class="role">CYBER SCIENTIST</span><strong>Anton Antstein</strong><span class="detail">View character <span aria-hidden="true">+</span></span></span>
+    </button>
+    <button class="card" type="button" data-character="sapphire">
+      <img src="assets/sapphire-portrait.webp" alt="" width="660" height="660" loading="lazy">
+      <span class="card-info"><span class="role">ROYAL GUARDIAN</span><strong>Sapphire Monarch</strong><span class="detail">View character <span aria-hidden="true">+</span></span></span>
+    </button>
+    <button class="card" type="button" data-character="crimson">
+      <img src="assets/crimson-portrait.webp" alt="" width="660" height="660" loading="lazy">
+      <span class="card-info"><span class="role">SOLAR MYSTIC</span><strong>Crimson Sunburst</strong><span class="detail">View character <span aria-hidden="true">+</span></span></span>
+    </button>
+  </div>
+</section>
+<section class="wrap universe" id="universe" aria-labelledby="universe-title">
+  <div class="universe-copy">
+    <p class="kicker">THE BMVERSE UNIVERSE</p>
+    <h2 id="universe-title">The city is only the beginning.</h2>
+    <p>ANTVERSE brings BMverse’s insectoid characters into a shared science-fantasy world. The Cyber City redesign takes them from orbital halls to the rooftops of a neon metropolis.</p>
+    <a href="#characters">Back to the characters</a>
+  </div>
+  <img src="assets/lineup.webp" alt="Seven ANTVERSE characters standing together in an orbital hall" width="1680" height="840" loading="lazy">
+</section>
+</main>
+<footer><div class="wrap footer-inner"><a class="brand" href="#top">BM<span>VERSE</span></a><span>ANTVERSE · Cyber City</span></div></footer>
+<dialog id="profile" aria-labelledby="profile-title">
+  <form method="dialog"><button class="close" aria-label="Close character profile">×</button></form>
+  <p class="kicker" id="profile-role"></p>
+  <h2 id="profile-title"></h2>
+  <p id="profile-copy"></p>
+  <img id="profile-art" alt="" width="1680" height="560">
+</dialog>
+</body>
+</html>
