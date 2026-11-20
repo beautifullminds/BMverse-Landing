@@ -1,0 +1,20 @@
+{
+  "name": "DOT-X Universe Hand \u00b7 Marketplace Edition",
+  "description": "A new ANTVERSE edition from BMverse.",
+  "image": "https://bmverse.best/assets/nfts/dotx_universe_hand.webp",
+  "external_url": "https://bmverse.best/#nfts",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "ANTVERSE"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Artifacts"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Marketplace Edition"
+    }
+  ]
+}

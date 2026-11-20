@@ -1,21 +1,40 @@
 const characters = {
-  anton: {
-    name: "Anton Antstein",
-    role: "Cyber scientist",
-    copy: "Anton studies the city’s energy systems from the rooftops, using portable holograms to map what keeps the towers alive."
+  "anton": {
+    "name": "Anton Antstein",
+    "role": "Cyber scientist",
+    "copy": "View Anton Antstein from the front, at a three-quarter angle, and in profile."
   },
-  sapphire: {
-    name: "Sapphire Monarch",
-    role: "Royal guardian",
-    copy: "A winged guardian of the orbital halls, the Sapphire Monarch wears crystalline armor that catches the city’s blue light."
+  "engineer": {
+    "name": "Gold-Black Engineer",
+    "role": "Drone engineer",
+    "copy": "View Gold-Black Engineer from the front, at a three-quarter angle, and in profile."
   },
-  crimson: {
-    name: "Crimson Sunburst",
-    role: "Solar mystic",
-    copy: "The Crimson Sunburst channels radiant energy through a sunburst crown and rings of red light."
+  "crimson": {
+    "name": "Crimson Sunburst",
+    "role": "Solar mystic",
+    "copy": "View Crimson Sunburst from the front, at a three-quarter angle, and in profile."
+  },
+  "sapphire": {
+    "name": "Sapphire Monarch",
+    "role": "Royal guardian",
+    "copy": "View Sapphire Monarch from the front, at a three-quarter angle, and in profile."
+  },
+  "coral": {
+    "name": "Coral Insectoid",
+    "role": "Cyber City character",
+    "copy": "View Coral Insectoid from the front, at a three-quarter angle, and in profile."
+  },
+  "jade": {
+    "name": "Jade Orbital Guardian",
+    "role": "Orbital guardian",
+    "copy": "View Jade Orbital Guardian from the front, at a three-quarter angle, and in profile."
+  },
+  "emerald": {
+    "name": "Emerald Sage",
+    "role": "Energy sage",
+    "copy": "View Emerald Sage from the front, at a three-quarter angle, and in profile."
   }
 };
-
 const menu = document.querySelector(".menu");
 const nav = document.querySelector("#nav");
 

@@ -1,0 +1,20 @@
+{
+  "name": "Music of \u201cRenata\u201d Identity \u00b7 Marketplace Edition",
+  "description": "A new ANTVERSE edition from BMverse.",
+  "image": "https://bmverse.best/assets/nfts/music_renata.webp",
+  "external_url": "https://bmverse.best/#nfts",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "ANTVERSE"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Music"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Marketplace Edition"
+    }
+  ]
+}

@@ -92,3 +92,9 @@ dialog img{width:100%;height:auto}
 @media(max-width:900px){.nft-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:670px){.nft-grid,.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nft-dialog-grid{grid-template-columns:1fr}.nft-dialog-grid .nft-media{aspect-ratio:1.5}.nft-dialog{padding-top:3.8rem}}
 @media(max-width:350px){.nft-grid,.footer-grid{grid-template-columns:1fr}}
+
+[hidden]{display:none!important}
+.catalog-controls input[type=search]{min-width:0;background:#1e1427;color:#fff;border:1px solid #614967;border-radius:6px;padding:.65rem;font:inherit}
+#nft-detail-media img{object-fit:contain}
+#mint-status:empty,#nft-price:empty{display:none}
+#mint-transaction{display:block;margin-top:1rem}
