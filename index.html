@@ -8,6 +8,8 @@
 <title>BMverse | ANTVERSE Cyber City</title>
 <link rel="stylesheet" href="style.css">
 <script src="site.js" defer></script>
+<script src="catalog-data.js" defer></script>
+<script src="catalog.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -15,9 +17,9 @@
   <a class="brand" href="#top" aria-label="BMverse home"><span class="mark" aria-hidden="true">B</span>BM<span>VERSE</span></a>
   <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
   <nav id="nav" aria-label="Main navigation">
-    <a href="#top">Home</a><a href="#characters">Characters</a><a href="#universe">Universe</a>
+    <a href="#top">Home</a><a href="#characters">Characters</a><a href="#nfts">NFTs</a><a href="#universe">Universe</a>
   </nav>
-  <a class="nav-action" href="#characters">Explore ANTVERSE</a>
+  <a class="nav-action" href="#nfts">Browse NFTs</a>
 </header>
 <main id="main">
 <section class="hero" id="top" aria-labelledby="headline">
@@ -49,6 +51,23 @@
     </button>
   </div>
 </section>
+<section class="wrap nft-section" id="nfts" aria-labelledby="nft-title">
+  <p class="kicker">BMVERSE COLLECTIONS</p>
+  <h2 id="nft-title">Explore the NFTs</h2>
+  <p class="section-copy">Browse ANTVERSE collectibles and the BMJewels collection.</p>
+  <div class="catalog-controls">
+    <fieldset class="collection-switch">
+      <legend class="sr-only">Collection</legend>
+      <label><input type="radio" name="collection" value="all" checked><span>All NFTs</span></label>
+      <label><input type="radio" name="collection" value="ANTVERSE"><span>ANTVERSE</span></label>
+      <label><input type="radio" name="collection" value="BMJewels"><span>BMJewels</span></label>
+    </fieldset>
+    <label class="filter">Category <select id="nft-category"><option value="all">All categories</option></select></label>
+  </div>
+  <p class="catalog-count" id="catalog-count" role="status"></p>
+  <div class="nft-grid" id="nft-grid"></div>
+  <noscript><a href="https://bmverse.us/antverse_one_page.html">Browse ANTVERSE</a> · <a href="https://bmverse.us/bm_jewels.html">Browse BMJewels</a></noscript>
+</section>
 <section class="wrap universe" id="universe" aria-labelledby="universe-title">
   <div class="universe-copy">
     <p class="kicker">THE BMVERSE UNIVERSE</p>
@@ -59,7 +78,27 @@
   <img src="assets/lineup.webp" alt="Seven ANTVERSE characters standing together in an orbital hall" width="1680" height="840" loading="lazy">
 </section>
 </main>
-<footer><div class="wrap footer-inner"><a class="brand" href="#top">BM<span>VERSE</span></a><span>ANTVERSE · Cyber City</span></div></footer>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div><a class="brand" href="#top" aria-label="BMverse home"><span class="mark" aria-hidden="true">B</span>BM<span>VERSE</span></a><p>Home of ANTVERSE and BMJewels.</p></div>
+    <div><h2>Explore</h2><a href="#characters">Cyber City characters</a><a href="#nfts" data-collection="ANTVERSE">ANTVERSE NFTs</a><a href="#nfts" data-collection="BMJewels">BMJewels</a></div>
+    <div><h2>Collections on OpenSea</h2><a href="https://opensea.io/collection/bmverse-mega-collection">BMverse Mega Collection</a><a href="https://opensea.io/collection/bm-jewels">BM Jewels</a></div>
+    <div><h2>Follow BMverse</h2><a href="https://x.com/bmverseio">X</a><a href="https://www.linkedin.com/company/bmverse">LinkedIn</a><a href="https://github.com/beautifullminds">GitHub</a></div>
+  </div>
+  <div class="wrap footer-base"><span>© BMverse</span><a href="#top">Back to top</a></div>
+</footer>
+<dialog class="nft-dialog" id="nft-detail" aria-labelledby="nft-name">
+  <form method="dialog"><button class="close" aria-label="Close NFT details">×</button></form>
+  <div class="nft-dialog-grid">
+    <div class="nft-media" id="nft-detail-media"></div>
+    <div>
+      <p class="kicker" id="nft-collection"></p>
+      <h2 id="nft-name"></h2>
+      <p class="section-copy" id="nft-type"></p>
+      <a class="button" id="nft-link" href="https://opensea.io/">View on OpenSea</a>
+    </div>
+  </div>
+</dialog>
 <dialog id="profile" aria-labelledby="profile-title">
   <form method="dialog"><button class="close" aria-label="Close character profile">×</button></form>
   <p class="kicker" id="profile-role"></p>
