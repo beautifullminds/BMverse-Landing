@@ -194,6 +194,18 @@ for (const name of collections) {
   tab.setAttribute('aria-pressed', String(collection === name));
   $('collections').append(tab);
 }
+for (const shortcut of document.querySelectorAll('[data-collection]')) {
+  const tab = [...$('collections').children].find(option => option.textContent === shortcut.dataset.collection);
+  if (!tab) continue;
+  shortcut.addEventListener('click', () => {
+    $('search').value = '';
+    $('category').value = '';
+    savedOnly = false;
+    $('saved').setAttribute('aria-pressed', 'false');
+    tab.click();
+    tab.focus({ preventScroll: true });
+  });
+}
 $('search').addEventListener('input', render);
 $('sort').addEventListener('change', render);
 $('category').addEventListener('change', render);

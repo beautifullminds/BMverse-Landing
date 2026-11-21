@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Explore original ANTVERSE NFTs, BM Jewels, and Cyber City character art.">
-<title>ANTVERSE Marketplace | BMverse</title>
+<meta name="description" content="Enter ANTVERSE Cyber City. Discover digital collectibles, explore the Genesis world, and find ANTv markets on BNB Smart Chain and Solana.">
+<title>ANTVERSE Cyber City | BMverse</title>
 <link rel="stylesheet" href="market.css">
 <script src="market-data.js" defer></script>
 <script src="genesis-data.js" defer></script>
@@ -19,14 +19,42 @@
 </header>
 <p id="wallet-status" role="status" hidden></p>
 <main>
-  <section class="hero" aria-labelledby="hero-title">
-    <div><p class="eyebrow">BM MEGA COLLECTION</p><h1 id="hero-title">ANTVERSE<br><em>Cyber City</em></h1>
-    <p>Explore original ANTVERSE collectibles, BM Jewels, Genesis, and characters reimagined for Cyber City.</p>
-    <div class="hero-actions"><a class="primary" href="#market">Explore collections</a><a class="secondary" href="#token">Trade ANTv</a></div></div>
+  <section class="landing-hero" aria-labelledby="hero-title">
+    <img class="landing-hero-art" src="assets/city.webp" width="1672" height="941" alt="" fetchpriority="high">
+    <div class="landing-inner landing-hero-copy">
+      <p class="eyebrow">The BMverse collectible universe</p>
+      <h1 id="hero-title">Enter<br><em>Cyber City.</em></h1>
+      <p class="landing-lede">Meet the characters of ANTVERSE, from the neon rooftops of Cyber City to the tunnels of Genesis. Explore original collectibles and the BM Jewels collection.</p>
+      <div class="hero-actions">
+        <a class="primary" href="#market">Explore marketplace</a>
+        <a class="secondary" href="#token">View ANTv markets</a>
+      </div>
+    </div>
+  </section>
+  <section class="landing-inner landing-collections" aria-labelledby="collection-title">
+    <div class="section-title"><h2 id="collection-title">Find your collection</h2><a class="landing-text-link" data-collection="All items" href="#market">View all collectibles</a></div>
+    <div class="landing-collection-grid">
+      <a class="collection-feature" data-collection="Cyber City" href="#market">
+        <img src="assets/cyber/0.webp" width="440" height="440" alt="" loading="lazy">
+        <div><h3>Cyber City</h3><p>Character designs from the neon metropolis</p></div>
+      </a>
+      <a class="collection-feature" data-collection="ANTVERSE" href="#market">
+        <img src="assets/nfts/queen_berenice.webp" alt="" loading="lazy">
+        <div><h3>ANTVERSE</h3><p>Original characters, artifacts, and music</p></div>
+      </a>
+      <a class="collection-feature" data-collection="BM Jewels" href="#market">
+        <img src="assets/nfts/dignity_ring.webp" alt="" loading="lazy">
+        <div><h3>BM Jewels</h3><p>Gemstones, rings, and jewelry</p></div>
+      </a>
+      <a class="collection-feature" data-collection="Genesis" href="#market">
+        <img src="antverse/art/1.webp" alt="" loading="lazy">
+        <div><h3>Genesis</h3><p>Characters, relics, and territories</p></div>
+      </a>
+    </div>
   </section>
   <div id="nfts"></div><div id="characters"></div>
   <section class="market" id="market" aria-labelledby="market-title">
-    <div class="section-title"><h2 id="market-title">Explore collections</h2><button id="saved" type="button" aria-pressed="false">Saved items</button></div>
+    <div class="section-title"><h2 id="market-title">Marketplace</h2><button id="saved" type="button" aria-pressed="false">Saved items</button></div>
     <div id="collections" class="tabs" aria-label="Collections"></div>
     <div class="filters">
       <label>Search<input id="search" type="search" placeholder="Name, trait, or token ID"></label>
