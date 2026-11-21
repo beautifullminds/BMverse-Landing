@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100b17">
+<meta name="description" content="Explore BMverse and meet the cyber-city characters of ANTVERSE.">
+<title>BMverse | ANTVERSE Cyber City</title>
+<link rel="stylesheet" href="style.css">
+<script src="site.js" defer></script>
+<script src="catalog-data.js" defer></script>
+<script src="mint-config.js" defer></script>
+<script src="catalog.js" defer></script>
+<script src="mint.js" defer></script>
+<script src="nesting.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="brand" href="#top" aria-label="BMverse home"><span class="mark" aria-hidden="true">B</span>BM<span>VERSE</span></a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main navigation">
+    <a href="#top">Home</a><a href="#characters">Characters</a><a href="#nfts">Marketplace</a><a href="#loadout">Loadout</a><a href="#universe">Universe</a><a href="/platform/">Platform v2.4.2</a>
+  </nav>
+  <a class="nav-action" href="#nfts">Browse NFTs</a>
+</header>
+<main id="main">
+<section class="hero" id="top" aria-labelledby="headline">
+  <img class="hero-art" src="assets/city.webp" alt="Anton Antstein overlooking a neon skyline" fetchpriority="high" width="1672" height="941">
+  <div class="hero-content wrap">
+    <p class="kicker"><span></span> BMVERSE PRESENTS</p>
+    <h1 id="headline">ENTER<br>THE <em>ANTVERSE</em></h1>
+    <p class="intro">Meet the scientists, guardians, and mystics of a neon city built above the clouds.</p>
+    <a class="button" href="#characters">Explore characters</a>
+  </div>
+  <div class="hero-credit">ANTON ANTSTEIN <span> / </span> CYBER CITY</div>
+</section>
+<section class="wrap roster" id="characters" aria-labelledby="roster-title">
+  <p class="kicker">ANTVERSE CHARACTERS</p>
+  <h2 id="roster-title">Meet the roster</h2>
+  <p class="section-copy">Open a character profile to see the redesign from three angles.</p>
+  <div class="cards">
+    <button class="card" type="button" data-character="anton"><img src="assets/anton-portrait.webp" alt="" loading="lazy"><span class="card-info"><span class="role">CYBER SCIENTIST</span><strong>Anton Antstein</strong><span class="detail">View character +</span></span></button>
+    <button class="card" type="button" data-character="engineer"><img src="assets/engineer-portrait.webp" alt="" loading="lazy"><span class="card-info"><span class="role">DRONE ENGINEER</span><strong>Gold-Black Engineer</strong><span class="detail">View character +</span></span></button>
+    <button class="card" type="button" data-character="crimson"><img src="assets/crimson-portrait.webp" alt="" loading="lazy"><span class="card-info"><span class="role">SOLAR MYSTIC</span><strong>Crimson Sunburst</strong><span class="detail">View character +</span></span></button>
+    <button class="card" type="button" data-character="sapphire"><img src="assets/sapphire-portrait.webp" alt="" loading="lazy"><span class="card-info"><span class="role">ROYAL GUARDIAN</span><strong>Sapphire Monarch</strong><span class="detail">View character +</span></span></button>
+    <button class="card" type="button" data-character="coral"><img src="assets/coral-portrait.webp" alt="" loading="lazy"><span class="card-info"><span class="role">CYBER CITY CHARACTER</span><strong>Coral Insectoid</strong><span class="detail">View character +</span></span></button>
+    <button class="card" type="button" data-character="jade"><img src="assets/jade-portrait.webp" alt="" loading="lazy"><span class="card-info"><span class="role">ORBITAL GUARDIAN</span><strong>Jade Orbital Guardian</strong><span class="detail">View character +</span></span></button>
+    <button class="card" type="button" data-character="emerald"><img src="assets/emerald-portrait.webp" alt="" loading="lazy"><span class="card-info"><span class="role">ENERGY SAGE</span><strong>Emerald Sage</strong><span class="detail">View character +</span></span></button>
+  </div>
+</section>
+<section class="wrap nft-section" id="nfts" aria-labelledby="nft-title">
+  <p class="kicker">BMVERSE COLLECTIONS</p>
+  <h2 id="nft-title">ANTVERSE Marketplace</h2>
+  <p class="section-copy">Discover Cyber City editions, original ANTVERSE collectibles, and BMJewels.</p>
+  <div class="catalog-controls">
+    <fieldset class="collection-switch">
+      <legend class="sr-only">Collection</legend>
+      <label><input type="radio" name="collection" value="all" checked><span>All NFTs</span></label>
+      <label><input type="radio" name="collection" value="ANTVERSE"><span>ANTVERSE</span></label>
+      <label><input type="radio" name="collection" value="BMJewels"><span>BMJewels</span></label>
+    </fieldset>
+    <label class="filter">Category <select id="nft-category"><option value="all">All categories</option></select></label>
+  </div>
+  <div class="catalog-controls">
+    <label class="filter">Search <input id="catalog-search" type="search" placeholder="Name or category"></label>
+    <label class="filter">Sort <select id="catalog-sort"><option value="featured">Featured</option><option value="price">Price low to high</option><option value="name">Name A–Z</option></select></label>
+  </div>
+  <p class="catalog-count" id="catalog-count" role="status"></p>
+  <div class="nft-grid" id="nft-grid"></div>
+  <noscript><a href="https://bmverse.us/antverse_one_page.html">Browse ANTVERSE</a> · <a href="https://bmverse.us/bm_jewels.html">Browse BMJewels</a></noscript>
+</section>
+<section id="loadout" class="wrap loadout" aria-labelledby="loadout-title">
+  <p class="kicker">CYBER CITY</p>
+  <h2 id="loadout-title">Character loadout</h2>
+  <p>Try a BMJewel, set the scene and choose a character theme. Each equipped edition travels with its character.</p>
+  <label>Character <select id="loadout-character"></select></label>
+  <div class="loadout-grid">
+    <figure><img id="loadout-portrait" alt=""><figcaption id="loadout-caption"></figcaption><p id="loadout-story" aria-live="polite"></p></figure>
+    <div><div id="loadout-slots"></div><fieldset id="loadout-wallet" hidden><legend>Manage owned editions</legend><button type="button" id="check-equipment">Read equipped items</button><p id="chain-equipment"></p></fieldset></div>
+  </div>
+  <p id="equipment-status" role="status">Preview mode. Selections here do not move NFTs.</p>
+</section>
+<section class="wrap universe" id="universe" aria-labelledby="universe-title">
+  <div class="universe-copy">
+    <p class="kicker">THE BMVERSE UNIVERSE</p>
+    <h2 id="universe-title">The city is only the beginning.</h2>
+    <p>ANTVERSE brings BMverse’s insectoid characters into a shared science-fantasy world. The Cyber City redesign takes them from orbital halls to the rooftops of a neon metropolis.</p>
+    <a href="#characters">Back to the characters</a>
+  </div>
+  <img src="assets/lineup.webp" alt="Seven ANTVERSE characters standing together in an orbital hall" width="1680" height="840" loading="lazy">
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div><a class="brand" href="#top" aria-label="BMverse home"><span class="mark" aria-hidden="true">B</span>BM<span>VERSE</span></a><p>Home of ANTVERSE and BMJewels.</p></div>
+    <div><h2>Explore</h2><a href="/platform/marketplace/">Platform marketplace</a><a href="#characters">Cyber City characters</a><a href="#nfts" data-collection="ANTVERSE">ANTVERSE NFTs</a><a href="#nfts" data-collection="BMJewels">BMJewels</a></div>
+    <div><h2>Collections on OpenSea</h2><a href="https://opensea.io/collection/bmverse-mega-collection">BMverse Mega Collection</a><a href="https://opensea.io/collection/bm-jewels">BM Jewels</a></div>
+    <div><h2>Follow BMverse</h2><a href="https://x.com/bmverseio">X</a><a href="https://www.linkedin.com/company/bmverse">LinkedIn</a><a href="https://github.com/beautifullminds">GitHub</a></div>
+  </div>
+  <div class="wrap footer-base"><span>© BMverse</span><a href="#top">Back to top</a></div>
+</footer>
+<dialog class="nft-dialog" id="nft-detail" aria-labelledby="nft-name">
+  <form method="dialog"><button class="close" aria-label="Close NFT details">×</button></form>
+  <div class="nft-dialog-grid">
+    <div class="nft-media" id="nft-detail-media"></div>
+    <div>
+      <p class="kicker" id="nft-collection"></p>
+      <h2 id="nft-name"></h2>
+      <p class="section-copy" id="nft-type"></p>
+      <p id="nft-price"></p>
+      <p id="mint-status" role="status" aria-live="polite"></p>
+      <button id="mint-button" class="button" type="button" hidden>Connect wallet</button>
+      <a id="mint-transaction" hidden target="_blank" rel="noopener noreferrer">View transaction</a>
+      <a class="button" id="nft-link" href="https://opensea.io/">View on OpenSea</a>
+    </div>
+  </div>
+</dialog>
+<dialog id="profile" aria-labelledby="profile-title">
+  <form method="dialog"><button class="close" aria-label="Close character profile">×</button></form>
+  <p class="kicker" id="profile-role"></p>
+  <h2 id="profile-title"></h2>
+  <p id="profile-copy"></p>
+  <img id="profile-art" alt="" width="1680" height="560">
+</dialog>
+</body>
+</html>

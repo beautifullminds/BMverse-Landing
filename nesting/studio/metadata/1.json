@@ -1,0 +1,20 @@
+{
+  "name": "Anton Antstein \u00b7 Cyber City",
+  "description": "A new ANTVERSE edition from BMverse.",
+  "image": "https://bmverse.best/assets/anton-portrait.webp",
+  "external_url": "https://bmverse.best/#nfts",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "ANTVERSE"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Characters"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Cyber City"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Stone of God Ring \u00b7 Marketplace Edition",
+  "description": "A new BMJewels edition from BMverse.",
+  "image": "https://bmverse.best/assets/nfts/stone_of_god_ring.webp",
+  "external_url": "https://bmverse.best/#nfts",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "BMJewels"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Jewels"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Marketplace Edition"
+    }
+  ]
+}
