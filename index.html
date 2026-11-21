@@ -7,21 +7,22 @@
 <title>ANTVERSE Marketplace | BMverse</title>
 <link rel="stylesheet" href="market.css">
 <script src="market-data.js" defer></script>
+<script src="genesis-data.js" defer></script>
 <script src="market.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#market">Skip to collections</a>
 <header class="top">
   <a href="./" class="brand"><span aria-hidden="true">◈</span> BMVERSE</a>
-  <nav aria-label="Main"><a href="#market">Marketplace</a><a href="/platform/">Platform</a><a href="editions.html#nfts">Mint editions</a></nav>
+  <nav aria-label="Main"><a href="#market">Marketplace</a><a href="#token">ANTv token</a><a href="/platform/">Platform</a><a href="editions.html#nfts">Mint editions</a></nav>
   <button id="wallet" type="button">Connect wallet</button>
 </header>
 <p id="wallet-status" role="status" hidden></p>
 <main>
   <section class="hero" aria-labelledby="hero-title">
     <div><p class="eyebrow">BM MEGA COLLECTION</p><h1 id="hero-title">ANTVERSE<br><em>Cyber City</em></h1>
-    <p>Discover the original ANTVERSE collectibles, explore BM Jewels, and meet the characters reimagined for Cyber City.</p>
-    <a class="primary" href="#market">Explore collections</a></div>
+    <p>Explore original ANTVERSE collectibles, BM Jewels, Genesis, and characters reimagined for Cyber City.</p>
+    <div class="hero-actions"><a class="primary" href="#market">Explore collections</a><a class="secondary" href="#token">Trade ANTv</a></div></div>
   </section>
   <div id="nfts"></div><div id="characters"></div>
   <section class="market" id="market" aria-labelledby="market-title">
@@ -34,9 +35,36 @@
     </div>
     <p class="count" id="count" aria-live="polite"></p>
     <div id="grid" class="grid"></div>
-    <noscript><p>Enable JavaScript to browse the marketplace or <a href="https://opensea.io/collection/bmverse-mega-collection">open ANTVERSE on OpenSea</a>.</p></noscript>
+    <noscript><p>Enable JavaScript to browse the marketplace.</p></noscript>
+  </section>
+  <section class="market token-section" id="token" aria-labelledby="token-title">
+    <p class="eyebrow">ANTVERSE TOKEN</p>
+    <h2 id="token-title">Trade ANTv</h2>
+    <p class="muted">Charts show individual pools. Check the quote and liquidity on the trading venue before swapping.</p>
+    <div class="token-grid">
+      <article class="token-market">
+        <h3>BNB Smart Chain</h3>
+        <p class="muted">BEP-20 contract</p>
+        <code class="token-address">0xf9FA938a18D73246298ef99C7d6D75DCA7Eb2A48</code>
+        <div class="token-actions"><a class="primary" href="https://pancakeswap.finance/swap?chain=bsc&amp;outputCurrency=0xf9FA938a18D73246298ef99C7d6D75DCA7Eb2A48" target="_blank" rel="noopener noreferrer">Buy ANTv on PancakeSwap</a><a href="https://bscscan.com/token/0xf9FA938a18D73246298ef99C7d6D75DCA7Eb2A48" target="_blank" rel="noopener noreferrer">Token explorer</a></div>
+        <figure class="token-chart">
+          <figcaption>ANTv / USDT · PancakeSwap V3 · <a href="https://www.geckoterminal.com/bsc/pools/0x747b21a218382eae91d7479e51093a5a49ccc3dd" target="_blank" rel="noopener noreferrer">Open chart</a></figcaption>
+          <iframe title="BNB Smart Chain ANTVERSE pool chart" src="https://www.geckoterminal.com/bsc/pools/0x747b21a218382eae91d7479e51093a5a49ccc3dd?embed=1&amp;info=0&amp;swaps=0&amp;light_chart=0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </figure>
+      </article>
+      <article class="token-market">
+        <h3>Solana</h3>
+        <p class="muted">SPL token mint</p>
+        <code class="token-address">32aDAbrF7JM2s2gmtXpHXgXPpejgDNxB9KQgP3ZmtbZX</code>
+        <div class="token-actions"><a class="primary" href="https://pump.fun/coin/32aDAbrF7JM2s2gmtXpHXgXPpejgDNxB9KQgP3ZmtbZX" target="_blank" rel="noopener noreferrer">Buy ANTv on Pump</a><a href="https://solscan.io/token/32aDAbrF7JM2s2gmtXpHXgXPpejgDNxB9KQgP3ZmtbZX" target="_blank" rel="noopener noreferrer">Token explorer</a></div>
+        <figure class="token-chart">
+          <figcaption>ANTv / SOL · Pump bonding curve · <a href="https://www.geckoterminal.com/solana/pools/4HpWcnTQZo3F4FZSeAEiDE9KtivoJjmKwxJGuWFzruzy" target="_blank" rel="noopener noreferrer">Open chart</a></figcaption>
+          <iframe title="Solana ANTVERSE pool chart" src="https://www.geckoterminal.com/solana/pools/4HpWcnTQZo3F4FZSeAEiDE9KtivoJjmKwxJGuWFzruzy?embed=1&amp;info=0&amp;swaps=0&amp;light_chart=0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </figure>
+      </article>
+    </div>
   </section>
 </main>
-<footer><span class="brand">◈ BMVERSE</span><a href="/platform/marketplace/">BMverse Platform</a><a href="https://opensea.io/collection/bmverse-mega-collection">ANTVERSE on OpenSea</a><a href="https://opensea.io/collection/bm-jewels">BM Jewels on OpenSea</a><a href="https://x.com/bmverseio">X</a><a href="https://www.linkedin.com/company/bmverse">LinkedIn</a><a href="https://github.com/beautifullminds">GitHub</a></footer>
+<footer><span class="brand">◈ BMVERSE</span><a href="/platform/marketplace/">BMverse Platform</a><a href="/antverse/">Genesis world</a><a href="#token">ANTv token</a><a href="https://x.com/bmverseio">X</a><a href="https://www.linkedin.com/company/bmverse">LinkedIn</a><a href="https://github.com/beautifullminds">GitHub</a></footer>
 <dialog id="detail" aria-labelledby="item-title"><div class="dialog-top"><button id="close" type="button" aria-label="Close item">×</button></div><div id="item-detail"></div></dialog>
 </body></html>

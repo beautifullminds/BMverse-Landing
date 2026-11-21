@@ -73,7 +73,6 @@ const nftCatalog = [
     "name": "DOT-X Universe Hand",
     "category": "Artifacts",
     "collection": "ANTVERSE",
-    "url": "https://opensea.io/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/94780497993465599050485820079768614914578089821675988125085530622324667056129",
     "image": "assets/nfts/dotx_universe_hand.webp",
     "id": 8,
     "eth": 9471,
@@ -83,7 +82,6 @@ const nftCatalog = [
     "name": "Queen Berenice",
     "category": "Characters",
     "collection": "ANTVERSE",
-    "url": "https://opensea.io/collection/bmverse-mega-collection",
     "image": "assets/nfts/queen_berenice.webp",
     "id": 9,
     "eth": 6166,
@@ -93,7 +91,6 @@ const nftCatalog = [
     "name": "Candle of Magic Speech",
     "category": "Potions",
     "collection": "ANTVERSE",
-    "url": "https://opensea.io/collection/bmverse-mega-collection",
     "image": "assets/nfts/magical_potion.webp",
     "id": 10,
     "eth": 5583,
@@ -103,7 +100,6 @@ const nftCatalog = [
     "name": "DOT-X Bloody War",
     "category": "Scenes",
     "collection": "ANTVERSE",
-    "url": "https://opensea.io/collection/bmverse-mega-collection",
     "image": "assets/nfts/bloody_war.webp",
     "id": 11,
     "eth": 9162,
@@ -113,7 +109,6 @@ const nftCatalog = [
     "name": "Music of “Renata” Identity",
     "category": "Music",
     "collection": "ANTVERSE",
-    "url": "https://opensea.io/collection/bmverse-mega-collection",
     "image": "assets/nfts/music_renata.webp",
     "id": 12,
     "eth": 4056,
@@ -123,7 +118,6 @@ const nftCatalog = [
     "name": "Queen Fariciah",
     "category": "Characters",
     "collection": "ANTVERSE",
-    "url": "https://opensea.io/collection/bmverse-mega-collection",
     "image": "assets/nfts/queen_fariciah.webp",
     "id": 13,
     "eth": 7373,
@@ -133,7 +127,6 @@ const nftCatalog = [
     "name": "Triston",
     "category": "Characters",
     "collection": "ANTVERSE",
-    "url": "https://opensea.io/collection/bmverse-mega-collection",
     "image": "assets/nfts/triston.webp",
     "id": 14,
     "eth": 5199,
@@ -143,7 +136,6 @@ const nftCatalog = [
     "name": "Renata",
     "category": "Characters",
     "collection": "ANTVERSE",
-    "url": "https://opensea.io/collection/bmverse-mega-collection",
     "image": "assets/nfts/renata.webp",
     "id": 15,
     "eth": 1689,
@@ -153,7 +145,6 @@ const nftCatalog = [
     "name": "Dignity Ring",
     "category": "Jewels",
     "collection": "BMJewels",
-    "url": "https://opensea.io/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/94780497993465599050485820079768614914578089821675988125085530589339318222849",
     "image": "assets/nfts/dignity_ring.webp",
     "id": 16,
     "eth": 7162,
@@ -163,7 +154,6 @@ const nftCatalog = [
     "name": "Stone of God Ring",
     "category": "Jewels",
     "collection": "BMJewels",
-    "url": "https://opensea.io/collection/bm-jewels",
     "image": "assets/nfts/stone_of_god_ring.webp",
     "id": 17,
     "eth": 2920,
@@ -173,7 +163,6 @@ const nftCatalog = [
     "name": "Realities for Truth",
     "category": "Jewels",
     "collection": "BMJewels",
-    "url": "https://opensea.io/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/94780497993465599050485820079768614914578089821675988125085530592637853106177",
     "image": "assets/nfts/realities_for_truth.webp",
     "id": 18,
     "eth": 2506,
@@ -183,7 +172,6 @@ const nftCatalog = [
     "name": "Origin Ring",
     "category": "Jewels",
     "collection": "BMJewels",
-    "url": "https://opensea.io/collection/bm-jewels",
     "image": "assets/nfts/origin_ring.webp",
     "id": 19,
     "eth": 6858,
@@ -193,7 +181,6 @@ const nftCatalog = [
     "name": "Unequal Ring",
     "category": "Jewels",
     "collection": "BMJewels",
-    "url": "https://opensea.io/collection/bm-jewels",
     "image": "assets/nfts/unequal_ring.webp",
     "id": 20,
     "eth": 359,
@@ -203,14 +190,12 @@ const nftCatalog = [
     "name": "BLUE LOVE Necklaces",
     "category": "Jewels",
     "collection": "BMJewels",
-    "url": "https://opensea.io/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/94780497993465599050485820079768614914578089821675988125085530635518806589441",
     "image": null
   },
   {
     "name": "Light Pronoun Ring",
     "category": "Jewels",
     "collection": "BMJewels",
-    "url": "https://opensea.io/collection/bm-jewels",
     "image": "assets/nfts/light_pronoun_ring.webp",
     "id": 21,
     "eth": 871,
@@ -220,168 +205,144 @@ const nftCatalog = [
     "name": "DOT-X TRANSFORMATION \"Magical Potion\"",
     "collection": "ANTVERSE",
     "category": "Potions",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Music of \"Queen Berenice\" Identity",
     "collection": "ANTVERSE",
     "category": "Music",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "DOT-X PAMOLA MOTIONLESS",
     "collection": "ANTVERSE",
     "category": "Artifacts",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Naphil",
     "collection": "ANTVERSE",
     "category": "Characters",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "DOT-X COLD SUN",
     "collection": "ANTVERSE",
     "category": "Artifacts",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Damerae",
     "collection": "ANTVERSE",
     "category": "Characters",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Bloom",
     "collection": "ANTVERSE",
     "category": "Characters",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "DOT-X HANDS OF THE SEA",
     "collection": "ANTVERSE",
     "category": "Artifacts",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "DOT-X MOTHER OF BLOOD",
     "collection": "ANTVERSE",
     "category": "Artifacts",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Music Of \"Sydity\" Identity 13",
     "collection": "ANTVERSE",
     "category": "Music",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Music of \"Naphil\" Identity 99",
     "collection": "ANTVERSE",
     "category": "Music",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "DOT-X PAMOLA THE SAVIOR",
     "collection": "ANTVERSE",
     "category": "Artifacts",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "DOT-X CMS II \"Magical Potion\"",
     "collection": "ANTVERSE",
     "category": "Potions",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Music of \"Chinmoy\"99",
     "collection": "ANTVERSE",
     "category": "Music",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Robert Antue \"BOB\"",
     "collection": "ANTVERSE",
     "category": "Characters",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Music of \"Daya'ala\" Identity",
     "collection": "ANTVERSE",
     "category": "Music",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "DOT-X SUN RAYS",
     "collection": "ANTVERSE",
     "category": "Artifacts",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Music of \"Robert F'Antue\" Identity 99",
     "collection": "ANTVERSE",
     "category": "Music",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "DOT-X COUPLE ROSE \"Magical Potion\"",
     "collection": "ANTVERSE",
     "category": "Potions",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "DOT-X PAMOLA LEGENDARY \"Magical Potion\"",
     "collection": "ANTVERSE",
     "category": "Potions",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "DOT-X SUN SOUL",
     "collection": "ANTVERSE",
     "category": "Artifacts",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Sydity",
     "collection": "ANTVERSE",
     "category": "Characters",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Daya’ala",
     "collection": "ANTVERSE",
     "category": "Characters",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   },
   {
     "name": "Music of \"Triston\" Identity 99",
     "collection": "ANTVERSE",
     "category": "Music",
-    "image": null,
-    "url": "https://opensea.io/collection/bmverse-mega-collection"
+    "image": null
   }
 ];

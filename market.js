@@ -1,5 +1,17 @@
 const $ = id => document.getElementById(id);
-const collections = ['All items', 'Cyber City', 'ANTVERSE', 'BM Jewels'];
+const collections = ['All items', 'Cyber City', 'ANTVERSE', 'BM Jewels', 'Genesis'];
+const catalog = marketItems.concat(genesisAssets.map(asset => ({
+  id: 'genesis-' + asset.id,
+  name: asset.name,
+  collection: 'Genesis',
+  category: asset.category,
+  image: 'antverse/art/' + Number(asset.id) + '.webp',
+  description: asset.story,
+  attributes: [
+    { traitType: 'Rarity', value: asset.rarity },
+    { traitType: 'Trait', value: asset.trait }
+  ]
+})));
 const grid = $('grid');
 const dialog = $('detail');
 let collection = collections[0];
@@ -66,10 +78,16 @@ function detail(item, showCyber) {
     original.append(element('summary', 'Original character turnaround'), artwork(item.original, item.name + ' turnaround', true));
     visual.append(original);
   }
-  if (item.imageUrl && item.image !== item.imageUrl) visual.append(link('Original OpenSea media', item.imageUrl));
   if (item.animationUrl) {
-    const media = element('p');
-    media.append(link('Open original audio or animation', item.animationUrl));
+    const media = element('details');
+    const video = element('video');
+    video.controls = true;
+    video.preload = 'none';
+    video.playsInline = true;
+    video.setAttribute('aria-label', item.name + ' original video or audio');
+    video.src = item.animationUrl;
+    media.append(element('summary', 'Play original media'), video);
+    media.addEventListener('toggle', () => { if (!media.open) video.pause(); });
     visual.append(media);
   }
   const info = element('div');
@@ -86,7 +104,7 @@ function detail(item, showCyber) {
     }
     info.append(element('h3', 'Traits'), traits);
   }
-  if (item.url) {
+  if (item.tokenId) {
     const facts = element('dl', null, 'facts');
     for (const [label, value] of Object.entries({
       Network: item.chain, Contract: item.contractAddress, 'Token ID': item.tokenId,
@@ -100,9 +118,8 @@ function detail(item, showCyber) {
     for (const key of ['image', 'cyberImage', 'category', 'collection']) delete source[key];
     metadata.append(element('summary', 'Source metadata'), element('pre', JSON.stringify(source, null, 2)));
     info.append(metadata);
-    if (item.enforcement?.isDisabled || item.enforcement?.status === 'DISABLED') info.append(element('p', 'Trading disabled on OpenSea.'));
-    info.append(link('View on OpenSea', item.url, 'primary'));
   }
+  if (item.collection === 'Genesis') info.append(link('Explore the Genesis world', 'antverse/', 'primary'));
   const layout = element('div', null, 'detail-grid');
   layout.append(visual, info);
   $('item-detail').replaceChildren(layout);
@@ -147,7 +164,7 @@ function render() {
   const query = $('search').value.trim().toLowerCase();
   const category = $('category').value;
   const sort = $('sort').value;
-  const result = marketItems.filter(item => {
+  const result = catalog.filter(item => {
     if (!inCollection(item)) return false;
     if (category && item.category !== category) return false;
     if (savedOnly && !saved.has(item.id)) return false;
@@ -162,7 +179,7 @@ function render() {
 
 function updateCategories() {
   const previous = $('category').value;
-  const options = [...new Set(marketItems.filter(inCollection).map(item => item.category))].sort();
+  const options = [...new Set(catalog.filter(inCollection).map(item => item.category))].sort();
   $('category').replaceChildren(new Option('All categories', ''), ...options.map(name => new Option(name, name)));
   if (options.includes(previous)) $('category').value = previous;
 }
@@ -186,6 +203,7 @@ $('saved').addEventListener('click', () => {
   render();
 });
 $('close').addEventListener('click', () => dialog.close());
+dialog.addEventListener('close', () => dialog.querySelector('video')?.pause());
 
 function showAccounts(accounts) {
   const account = accounts[0];

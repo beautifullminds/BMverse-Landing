@@ -3,7 +3,6 @@ const category = document.querySelector("#nft-category");
 const count = document.querySelector("#catalog-count");
 const detail = document.querySelector("#nft-detail");
 const detailMedia = document.querySelector("#nft-detail-media");
-const nftLink = document.querySelector("#nft-link");
 const search = document.querySelector("#catalog-search");
 const sort = document.querySelector("#catalog-sort");
 let activeCollection = "all";
@@ -32,11 +31,6 @@ function openNFT(item) {
   document.querySelector("#nft-name").textContent = item.name;
   document.querySelector("#nft-type").textContent = [item.category, item.edition].filter(Boolean).join(" · ");
   document.querySelector("#nft-collection").textContent = item.collection;
-  nftLink.hidden = !item.url;
-  if (item.url) {
-    nftLink.href = item.url;
-    nftLink.textContent = item.url.includes("/item/") ? "View item on OpenSea" : "View collection on OpenSea";
-  }
   document.querySelector("#nft-price").textContent = item.eth ? `Mint price: ${item.eth.toLocaleString()} ETH` : "";
   detail.dispatchEvent(new CustomEvent("nft:selected", { detail: item }));
   detail.showModal();

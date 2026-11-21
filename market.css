@@ -6,3 +6,16 @@ footer{display:flex;flex-wrap:wrap;gap:1.2rem;border-top:1px solid var(--border)
 @media(max-width:640px){.top{gap:.6rem;flex-wrap:wrap}.top nav{order:3;width:100%;padding:.3rem 0}.hero{min-height:410px;background-position:62% center}.detail-grid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem}.card .body{padding:.65rem}.filters label:first-child{flex-basis:100%}.filters select{max-width:43vw}}
 .empty-art{display:grid;place-items:center;min-height:7rem;aspect-ratio:1;margin:0;background:#231932;color:var(--muted)}.facts dt{font-weight:700;color:var(--muted)}.facts dd{margin:0 0 .55rem}.detail-grid summary{padding:.6rem 0;cursor:pointer}.detail-grid details img{margin-bottom:.6rem}
 .detail-grid pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#0b0a12;border:1px solid var(--border);padding:.7rem;border-radius:8px;font-size:.8rem}.detail-grid button{margin:.6rem 0}
+
+.hero-actions,.token-actions{display:flex;align-items:center;flex-wrap:wrap;gap:.75rem}
+.hero-actions .secondary{border:1px solid var(--purple);color:var(--text);border-radius:8px;padding:.8rem 1.1rem;font-weight:700;margin-top:.6rem;background:#151320c9}
+.token-section{border-top:1px solid var(--border)}
+.token-section h2{font-size:clamp(1.65rem,3vw,2.6rem);margin:.6rem 0}
+.token-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:1rem;margin-top:1.3rem}
+.token-market{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:clamp(.75rem,2vw,1.25rem);min-width:0}
+.token-market h3{font-size:1.25rem;margin:0}
+.token-market p{margin:.55rem 0}
+.token-address{display:block;background:var(--bg);border-radius:8px;padding:.65rem;overflow-wrap:anywhere;font-size:.9rem;user-select:all}
+.token-actions{margin:.5rem 0 1rem}.token-actions a:not(.primary),.token-chart a{color:var(--accent);text-decoration:underline}
+.token-chart{margin:0}.token-chart figcaption{font-size:.9rem;color:var(--muted);margin-bottom:.6rem}
+.token-chart iframe{width:100%;height:340px;display:block;border:1px solid var(--border);border-radius:8px;background:var(--bg)}
