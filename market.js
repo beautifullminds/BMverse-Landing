@@ -44,7 +44,7 @@ function link(label, href, className) {
 
 function artwork(url, name, lazy = false) {
   const image = element('img');
-  image.src = url;
+  image.src = new URL(url, location.origin + '/').href;
   image.alt = name;
   if (lazy) image.loading = 'lazy';
   image.addEventListener('error', () => {
@@ -119,7 +119,7 @@ function detail(item, showCyber) {
     metadata.append(element('summary', 'Source metadata'), element('pre', JSON.stringify(source, null, 2)));
     info.append(metadata);
   }
-  if (item.collection === 'Genesis') info.append(link('Explore the Genesis world', 'antverse/', 'primary'));
+  if (item.collection === 'Genesis') info.append(link('Explore the Genesis world', '/antverse/genesis.html', 'primary'));
   const layout = element('div', null, 'detail-grid');
   layout.append(visual, info);
   $('item-detail').replaceChildren(layout);
@@ -166,7 +166,9 @@ function render() {
   const sort = $('sort').value;
   const result = catalog.filter(item => {
     if (!inCollection(item)) return false;
-    if (category && item.category !== category) return false;
+    if (category === 'Galaxy') {
+      if (!['Scenes','Territories'].includes(item.category)) return false;
+    } else if (category && item.category !== category) return false;
     if (savedOnly && !saved.has(item.id)) return false;
     return [item.name, item.tokenId, ...(item.attributes || []).flatMap(t => [t.traitType, t.value])]
       .join(' ').toLowerCase().includes(query);
@@ -180,7 +182,8 @@ function render() {
 function updateCategories() {
   const previous = $('category').value;
   const options = [...new Set(catalog.filter(inCollection).map(item => item.category))].sort();
-  $('category').replaceChildren(new Option('All categories', ''), ...options.map(name => new Option(name, name)));
+  if (options.some(name => ['Scenes','Territories'].includes(name))) options.unshift('Galaxy');
+  $('category').replaceChildren(new Option('All categories', ''), ...options.map(name => new Option(name === 'Galaxy' ? 'Galaxy · scenes and territories' : name, name)));
   if (options.includes(previous)) $('category').value = previous;
 }
 
@@ -193,6 +196,16 @@ for (const name of collections) {
   });
   tab.setAttribute('aria-pressed', String(collection === name));
   $('collections').append(tab);
+}
+for (const group of document.querySelectorAll('[data-group]')) {
+  group.addEventListener('click', () => {
+    $('search').value = '';
+    savedOnly = false;
+    $('saved').setAttribute('aria-pressed', 'false');
+    $('collections').firstElementChild.click();
+    $('category').value = group.dataset.group;
+    render();
+  });
 }
 for (const shortcut of document.querySelectorAll('[data-collection]')) {
   const tab = [...$('collections').children].find(option => option.textContent === shortcut.dataset.collection);

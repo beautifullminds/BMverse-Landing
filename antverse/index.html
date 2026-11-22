@@ -1,14 +1,41 @@
-<!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Explore the Antverse Genesis collection and its underground world."><title>Antverse — Rise of the Colony</title><link rel="stylesheet" href="style.css"><script src="../genesis-data.js" defer></script><script src="market.js" defer></script></head>
-<body>
-<header><div class="nav wrap"><a href="#" class="logo"><i class="mark">✳</i> ANT<span>VERSE</span></a><nav aria-label="Main navigation"><a href="#market">Marketplace</a><a href="#world">The World</a><a href="../#market">All collections</a></nav><button class="outline" id="collection">My collection</button></div></header>
-<main>
-<section class="hero"><div class="hero-art"></div><div class="wrap hero-content"><p class="kicker"><b></b> GENESIS COLLECTION</p><h1>RISE OF<br>THE <em>COLONY.</em></h1><p class="intro">Beneath the surface, a civilization stirs. Discover the warriors, relics, and territories of Antverse.</p><div class="actions"><a class="primary" href="#market">Explore marketplace</a><a class="outline" href="#world">Discover the world</a></div></div><div class="hero-caption">GENESIS / THE VERDANT SCOUT</div></section>
-<div class="strip"><div class="wrap"><span><i>✳</i> GENESIS SERIES</span><span><i>◇</i> 6 ORIGINAL ASSETS</span><span><i>▣</i> 3 ASSET CATEGORIES</span></div></div>
-<section id="market" class="market wrap"><p class="kicker"><b></b> THE GENESIS DROP</p><h2>Colony <em>Marketplace</em></h2><p class="muted">Explore the Genesis series. Prices and acquisitions are simulated.</p><div class="toolbar"><div class="filters" aria-label="Filter category"></div><div class="controls"><input type="search" id="search" aria-label="Search assets" placeholder="Search assets"><select id="sort" aria-label="Sort assets"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div></div><p class="count" aria-live="polite"></p><div class="grid"></div></section>
-<section id="world"><div class="wrap world"><div class="world-art"></div><div><p class="kicker"><b></b> THE WORLD BELOW</p><h2>Life beneath<br><em>the surface.</em></h2><p class="muted">The colony was built around a mineral that remembers. Scouts map its roots, veterans guard its furnaces, and oracles listen for what the stone has to say.</p><p class="muted">Collect characters, relics, and territories to piece together the story of Genesis.</p><a class="outline" href="#market">Browse Genesis</a></div></div></section>
-</main>
-<footer class="wrap"><a href="#" class="logo"><i class="mark">✳</i> ANT<span>VERSE</span></a><span>Genesis Series · Marketplace preview</span><a href="#market">Marketplace</a></footer>
-<dialog id="modal" aria-labelledby="dialog-title"><div class="dialog-shell"><form method="dialog"><button class="close" aria-label="Close">×</button></form><div id="dialog-content"></div></div></dialog>
-</body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Explore the ANTVERSE asset catalog, BMJewels and ANTv markets on BNB Smart Chain and Solana."><title>ANTVERSE · Galaxy, characters and collectibles</title><link rel="stylesheet" href="/market.css"><script defer src="/market-data.js"></script><script defer src="/genesis-data.js"></script><script defer src="/market.js"></script><script>if(location.hash==='#world')location.replace('/antverse/genesis.html#world')</script><link href="/ecosystem.css" rel="stylesheet"></head><body class="eco"><a class="skip" href="#main">Skip to content</a><header class="frame mast"><a class="wordmark" href="/"><span class="gem">◈</span>BMVERSE</a><nav aria-label="Primary"><a href="/eth-x/">ETH-X</a><a href="/antverse/">ANTVERSE</a><a href="/nesting/">Nesting</a><a href="/antverse/#token">ANTv DEX</a><a href="/platform/">Platform</a></nav></header><main id="main"><section class="frame world"><img src="/assets/city.webp" alt="The ANTVERSE skyline at night" fetchpriority="high"><div><p class="over">The BMverse collectible universe</p><h1>ANTVERSE</h1><p class="lede">From Cyber City’s rooftops to the Genesis tunnels, discover the characters, jewels and worlds that fit together.</p><a class="pill" href="#market">Browse assets ↓</a></div></section><nav class="frame jump" aria-label="Explore ANTVERSE"><a href="/nesting/studio/#loadout">Try nesting ↗</a><a href="/antverse/genesis.html">Enter Genesis ↗</a><a href="#token">ANTv DEX ↓</a><a href="/editions.html#nfts">Mint editions ↗</a><a href="/#community">Community governance ↗</a></nav><div class="frame"><button id="wallet" type="button">Connect wallet</button><p id="wallet-status" role="status" hidden></p></div><div id="nfts"></div><div id="characters"></div>
+  <section class="market" id="market" aria-labelledby="market-title">
+    <div class="section-title"><h2 id="market-title">Marketplace</h2><button id="saved" type="button" aria-pressed="false">Saved items</button></div>
+    <nav class="jump" aria-label="Asset groups"><a href="#market" data-group="Galaxy">Galaxy</a><a href="#market" data-group="Characters">Characters</a><a href="#market" data-group="Jewelry">BMJewels</a><a href="#market" data-group="Potions">Potions</a><a href="#market" data-group="Artifacts">Artifacts</a><a href="#market" data-group="Music">Music</a><a href="#market" data-group="Relics">Relics</a></nav><div id="collections" class="tabs" aria-label="Collections"></div>
+    <div class="filters">
+      <label>Search<input id="search" type="search" placeholder="Name, trait, or token ID"></label>
+      <label>Category<select id="category"></select></label>
+      <label>Sort<select id="sort"><option value="featured">Featured</option><option value="asc">Name A–Z</option><option value="desc">Name Z–A</option></select></label>
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div id="grid" class="grid"></div>
+    <noscript><p>Enable JavaScript to browse the marketplace.</p></noscript>
+  </section>
+  <section class="market token-section" id="token" aria-labelledby="token-title">
+    <p class="eyebrow">ANTVERSE TOKEN</p>
+    <h2 id="token-title">ANTv markets</h2>
+    <p class="muted">ANTv is the ANTVERSE ecosystem token. Each network has its own token identifier. Charts show individual pools. Check the quote and liquidity on the trading venue before swapping.</p>
+    <div class="token-grid">
+      <article class="token-market">
+        <h3>BNB Smart Chain</h3>
+        <p class="muted">BEP-20 contract</p>
+        <code class="token-address">0xf9FA938a18D73246298ef99C7d6D75DCA7Eb2A48</code>
+        <div class="token-actions"><a class="primary" href="https://pancakeswap.finance/swap?chain=bsc&amp;outputCurrency=0xf9FA938a18D73246298ef99C7d6D75DCA7Eb2A48" target="_blank" rel="noopener noreferrer">Get a PancakeSwap quote</a><a href="https://bscscan.com/token/0xf9FA938a18D73246298ef99C7d6D75DCA7Eb2A48" target="_blank" rel="noopener noreferrer">Token explorer</a></div>
+        <figure class="token-chart">
+          <figcaption>ANTv / USDT · PancakeSwap V3 · <a href="https://www.geckoterminal.com/bsc/pools/0x747b21a218382eae91d7479e51093a5a49ccc3dd" target="_blank" rel="noopener noreferrer">Open chart</a></figcaption>
+          <iframe title="BNB Smart Chain ANTVERSE pool chart" src="https://www.geckoterminal.com/bsc/pools/0x747b21a218382eae91d7479e51093a5a49ccc3dd?embed=1&amp;info=0&amp;swaps=0&amp;light_chart=0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </figure>
+      </article>
+      <article class="token-market">
+        <h3>Solana</h3>
+        <p class="muted">SPL token mint</p>
+        <code class="token-address">EbiwnxxwAcqs4QHn6yQBxoEi2q4uVgTsn4kM2w9HrmV5</code>
+        <div class="token-actions"><a class="primary" href="https://jup.ag/swap/SOL-EbiwnxxwAcqs4QHn6yQBxoEi2q4uVgTsn4kM2w9HrmV5" target="_blank" rel="noopener noreferrer">Check Jupiter for a route</a><a href="https://solscan.io/token/EbiwnxxwAcqs4QHn6yQBxoEi2q4uVgTsn4kM2w9HrmV5" target="_blank" rel="noopener noreferrer">Token explorer</a></div>
+        <figure class="token-chart">
+          <figcaption>ANTv / SOL · Meteora DBC · <a href="https://www.geckoterminal.com/solana/pools/CuP3Dd9qBEoNxvCh3YAxTe8J3WKF7sxHz7Lr8DGeouHD" target="_blank" rel="noopener noreferrer">Open chart</a></figcaption>
+          <iframe title="Solana ANTVERSE pool chart" src="https://www.geckoterminal.com/solana/pools/CuP3Dd9qBEoNxvCh3YAxTe8J3WKF7sxHz7Lr8DGeouHD?embed=1&amp;info=0&amp;swaps=0&amp;light_chart=0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </figure>
+      </article>
+    </div>
+  </section>
+</main><dialog id="detail" aria-labelledby="item-title"><div class="dialog-top"><button id="close" type="button" aria-label="Close item">×</button></div><div id="item-detail"></div></dialog><footer class="frame foot"><a class="wordmark" href="/">◈ BMVERSE</a><a href="/antverse/genesis.html">Genesis world</a><a href="/nesting/studio/#loadout">Loadout studio</a><a href="/antverse/#token">ANTv markets</a><a href="https://github.com/beautifullminds">GitHub</a><a href="https://x.com/bmverseio">Community on X</a></footer></body></html>
